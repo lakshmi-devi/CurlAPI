@@ -1,6 +1,7 @@
 package com.turtlemint;
 
 import Assertions.CreateRequestAssertion;
+import base.EndPoints;
 import base.HeadersList;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
@@ -37,9 +38,9 @@ public class CreateRequest extends BaseClass {
                       .spec(requestSpec)
                         .when()
                         .body(requestBody)
-                        .post("/createrequest");
+                        .post(EndPoints.createRequest);
         CreateRequestAssertion.createRequestAssertion(response);
-        System.out.println("CREATE REQUEST " + "========================" + "  " + response.getBody().asString());
+//        System.out.println("CREATE REQUEST " + "========================" + "  " + response.getBody().asString());
         printResponseLogInReport(response);
     }
 

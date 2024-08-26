@@ -38,7 +38,6 @@ public class CreateRequestAssertion {
         Assert.assertTrue(isReKycRequired, "true");
         Assert.assertEquals(responseDataType, "CUSTOM");
         Assert.assertEquals(flowType, "RESULT");
-        System.out.println("CREATE REQUEST " + "========================" + "  " + response.getBody().asString());
 
     }
 }

@@ -1,6 +1,7 @@
 package com.turtlemint;
 
 import Assertions.ValidatePincodeAssertion;
+import base.EndPoints;
 import base.HeadersList;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -20,7 +21,6 @@ public class ValidatepinCode {
 
     RequestSpecification requestSpec;
     CreateRequest createRequest = new CreateRequest();
-    JsonPath jsonPath;
     HeadersList headersListObj = new HeadersList();
 
     @Test
@@ -35,10 +35,8 @@ public class ValidatepinCode {
                 .spec(requestSpec)
                 .when()
                 .body(requestBody)
-                .post("/validatepincode");
+                .post(EndPoints.validatePincode);
         ValidatePincodeAssertion.ValidatePincodeAssertion(response);
-
-        System.out.println("validatepincode response" + " ======="  +response.getBody().asString());
         printResponseLogInReport(response);
 
     }
