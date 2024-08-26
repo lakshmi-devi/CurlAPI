@@ -71,5 +71,13 @@ Reporting using Extent Report framework.
 
 The framework integrates with extent report dependency for reporting. After running the tests, you can view the test report by navigating to reports folder for the HTML report.
 
+![Screenshot (55)](https://github.com/user-attachments/assets/66ad8721-2580-498e-bc2f-6a5bd537c4d0)
+![Screenshot (56)](https://github.com/user-attachments/assets/aa911c2b-3a5a-4c22-a1db-02d4e22771e0)
+![Screenshot (58)](https://github.com/user-attachments/assets/69d3ebdd-4b2a-4bc8-bb9f-c190645455fd)
+![Screenshot (57)](https://github.com/user-attachments/assets/69cb1f4b-0748-416d-b6d8-4de12ad38a36)
+
+
+
+
 
 
